@@ -1,0 +1,85 @@
+:root {
+  --background: #d4d4d4;
+  --primary-color: #191b1e;
+  --secundary-color: #434343;
+}
+[data-theme="dark"] {
+  --background: #191b1e;
+  --primary-color: #d4d4d4;
+  --secundary-color: #434343;
+}
+.App {
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.neu {
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+}
+.title-section {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+}
+.switch {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  z-index: 50;
+  top: 50px;
+  left: 60px;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: 0.5s ease-in-out;
+}
+a:hover {
+  background: #07c7a773;
+  color: #fff;
+  border-radius: 0px;
+  box-shadow: 0 0 5px #03e2a3, 0 0 25px #069f7b74, 0 0 50px #03e9f4,
+    0 0 100px #0adbb182;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
