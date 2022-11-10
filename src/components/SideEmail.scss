@@ -1,0 +1,19 @@
+.side-email {
+  position: absolute;
+  margin: 40px;
+  writing-mode: sideways-rl;
+  display: inline-block;
+
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  position: relative;
+  top: 300px;
+}
+.email-container {
+  -webkit-box-align: center;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+}

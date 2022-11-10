@@ -7,6 +7,7 @@ import useLocalStorage from "use-local-storage";
 import Parallax from "./Parallax";
 import ParticlesBackground from "./ParticlesBackground";
 import "./App.scss";
+import SideEmail from "./SideEmail";
 
 function App() {
   const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
@@ -21,6 +22,7 @@ function App() {
         {/* <button className="switch" onClick={switchTheme}></button> */}
         <Header />
         {/* <Parallax /> */}
+        <SideEmail />
         <About />
         <Contact />
         {/* <ParticlesBackground/> */}
