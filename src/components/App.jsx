@@ -2,12 +2,13 @@ import React from "react";
 import Header from "./Header";
 import About from "./About";
 import Contact from "./Contact";
+import Hello from "./Hello";
 
-import useLocalStorage from "use-local-storage";
-import Parallax from "./Parallax";
-import ParticlesBackground from "./ParticlesBackground";
 import "./App.scss";
+import useLocalStorage from "use-local-storage";
+import ParticlesBackground from "./ParticlesBackground";
 import SideEmail from "./SideEmail";
+// import Parallax from "./Parallax";
 
 function App() {
   const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
@@ -20,8 +21,9 @@ function App() {
     <React.Fragment>
       <div data-theme={theme}>
         {/* <button className="switch" onClick={switchTheme}></button> */}
-        <Header />
         {/* <Parallax /> */}
+        <Header />
+        <Hello/>
         <SideEmail />
         <About />
         <Contact />

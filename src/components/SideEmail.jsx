@@ -8,7 +8,7 @@ function SideEmail() {
         <a className="side-email" href="mailto:andrez.mazo@gmail.com">
           andrez.mazo@gmail.com
         </a>
-        <ul class="social-container">
+        <ul className="social-container">
           <li>
             <a
               href="https://github.com/andrezmazo"
@@ -34,7 +34,7 @@ function SideEmail() {
           </li>
           <li>
             <a
-              href="https://www.instagram.com/amdrezmazo"
+              href="https://www.instagram.com/andrezmazo"
               aria-label="Instagram"
               target="_blank"
               rel="noreferrer"

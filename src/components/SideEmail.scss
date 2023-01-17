@@ -1,9 +1,9 @@
 .side-email {
   position: absolute;
-  margin: 2rem;
+  // margin: 2rem;
   writing-mode: sideways-rl;
   display: inline-block;
-
+  left: 1.5vw;
   text-decoration-skip-ink: auto;
   color: inherit;
   writing-mode: vertical-rl;
@@ -22,9 +22,12 @@ a svg {
   height: 20px;
 }
 .social-container {
+  position: absolute;
+  top: 196px;
   display: flex;
   flex-direction: column;
   -webkit-box-align: center;
+    left: 1.5vw;
   align-items: center;
   margin: 0px;
   padding: 0px;
