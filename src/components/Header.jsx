@@ -19,9 +19,12 @@ function Header() {
   })
 
 const headerHandler = visible ? "site-header" : "hidden";
+// const headerHandler = visible ? "0px" : "-100px";
+
 
   return (
     <header className={headerHandler}>
+    {/* // <header className= "site-header" style={{top:{headerHandler}}} > */}
       <h2>AZM</h2>
       <ul>
         <li>

@@ -2,14 +2,9 @@ header {
   background-color: rgb(240, 240, 240);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 50px;
-  margin-bottom: 10px;
   top: 0;
-  transition: all 0.3s ease;
   width: 100%;
-  position: fixed;
-  z-index: 5;
 }
 
 .site-header {
@@ -21,16 +16,50 @@ header {
   z-index: 100;
   background-color: #f5f5f5;
   box-shadow: 0 1px 25px rgba(0, 0, 0, 0.1);
+  h2 {
+    font-size: 1.25rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 0.8rem;
+  }
+  ul {
+    font-size: 0.75rem;
+    position: absolute;
+    right: 2.5rem;
+    top: 0.4rem;
+    li {
+      margin-left: 1rem;
+      list-style-type: none;
+      float: left;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 20px 20px 60px #d1d1d1, -20px -20px 60px #ffffff;
+      padding: 12px 20px;
+      animation: gradient 2s ease infinite;
+    }
+  }
 }
-.hidden{
-  top: -100px;
-  transition: top 0.4s ease-out;
-  visibility: hidden;
-  h2{
+.hidden {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 50px;
+  top: -80px;
+  transition: all 0.4s ease-out;
+  width: 100%;
+  z-index: 100;
+  background-color: #f5f5f5;
+  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.1);
+  h2 {
     font-size: 1.25rem;
     position: absolute;
     left: 2.5rem;
     top: -100px;
+    color: #f5f5f5;
+    transition: all 0.4s ease-out;
   }
   ul li {
     margin-left: 1rem;
@@ -43,39 +72,9 @@ header {
     cursor: pointer;
     box-shadow: 20px 20px 60px #d1d1d1, -20px -20px 60px #ffffff;
     padding: 12px 20px;
-    transition: top 0.4s ease-out;
   }
 }
 
-.site-header h2 {
-  font-size: 1.25rem;
-  position: absolute;
-  left: 2.5rem;
-  top: 0.8rem;
-}
-
-.site-header ul {
-  font-size: 0.75rem;
-  position: absolute;
-  right: 2.5rem;
-  top: 0.4rem;
-}
-
-.site-header ul li {
-  margin-left: 1rem;
-  list-style-type: none;
-  float: left;
-  border: none;
-  border-radius: 5px;
-  text-align: center;
-  outline: none;
-  cursor: pointer;
-  box-shadow: 20px 20px 60px #d1d1d1, -20px -20px 60px #ffffff;
-  padding: 12px 20px;
-  // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  transition: 0.8s;
-  animation: gradient 2s ease infinite;
-}
 .site-header ul li:hover {
   box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
     inset -2px -2px 4px rgba(255, 255, 255, 0.5),
