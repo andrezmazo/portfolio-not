@@ -2,15 +2,17 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-}
+ }
 
-.parallax_group {
+
+.parallax-group {
   position: relative;
   height: 100vh;
-  width: 100vw;
-  transform-style: preserve-3d;
+  width: 100%;
 }
-.parallax_layer {
+.parallax-layer {
+  height: 100vh;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -19,42 +21,44 @@
 }
 
 .sky {
-  background: url("../../public/img/sky.png") no-repeat center;
+  background: url("../img/sky.png") no-repeat center;
   background-size: cover;
-  transform: translateZ(-600px) scale(3);
   z-index: 1;
 }
 
 .mountains {
-  background: url("../../public/img/mountains.png") no-repeat center;
+  background: url("../img/mountains.png") no-repeat center;
   background-size: cover;
-  transform: translateZ(-525px) scale(2.75);
   z-index: 2;
 }
 
 .buildings1 {
-  background: url("../../public/img/buildings1.png") no-repeat center;
+  background: url("../img/buildings1.png") no-repeat center;
   background-size: cover;
-  transform: translateZ(-400px) scale(2.33333333);
-  z-index: 3;
-}
-
-.buildings2 {
-  background: url("../../public/img/buildings2.png") no-repeat center;
-  background-size: cover;
-  transform: translateZ(-250px) scale(1.833333333);
   z-index: 4;
 }
 
-.hero-text {
+.buildings2 {
+  background: url("../img/buildings2.png") no-repeat center;
+  background-size: cover;
+  z-index: 6;
+}
+
+.gradient {
   background: linear-gradient(
-    rgba(0, 183, 255, 0.58) 0%,
-    rgba(255, 30, 101, 0.25) 86%,
-    rgba(1, 0, 0, 0.692) 100%
+    rgba(0, 255, 238, 0.325) 0%,
+    rgba(255, 61, 139, 0.258) 86%,
+    rgba(1, 0, 0, 0.421) 100%
   );
   background-size: cover;
   transform: translateZ(0) scale(1);
   z-index: 7;
+}
+.name-parallax{
+  z-index: 3;
+}
+.lastname-parallax{
+  z-index: 5;
 }
 .name-container {
   display: flex;
@@ -67,6 +71,7 @@
   flex-direction: column;
   height: fit-content;
 }
+
 .name-container h1 {
   font-weight: 400;
   // position: fixed;
@@ -74,6 +79,9 @@
 }
 
 .name-container h1:nth-of-type(1) {
+  color:#262525;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
   top: 18%;
   left: -62%;
   font-size: 3.5rem;
@@ -88,25 +96,14 @@
   height: 132px;
 }
 
-.name-container h1:nth-of-type(3) {
-  top: 238px;
-  right: 18%;
+.lastname-parallax h1:nth-of-type(1) {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
   white-space: nowrap;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 5.89rem;
 }
 
-.social-container {
-  position: absolute;
-  left: 1.5vw;
-  bottom: 2.5rem;
-}
-
-.social-container i {
-  font-size: 3rem;
-  margin-right: 0.25rem;
-}
-.social-container i:hover {
-  color: deepskyblue;
-  transition: all 0.3s ease-in-out;
-}

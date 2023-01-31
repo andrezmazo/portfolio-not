@@ -1,5 +1,7 @@
 import React from "react";
 import "./About.scss";
+import pic from '../img/pic.jpg'
+
 
 function About() {
   return (
@@ -8,7 +10,7 @@ function About() {
         <div className="box-container neu">
           <div className="pic-container">
             <img
-              src="./img/pic.jpg"
+              src={pic}
               className="main-pic"
               alt="Andrés Zapata Mazo"
             />

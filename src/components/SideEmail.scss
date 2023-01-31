@@ -8,8 +8,8 @@
   color: inherit;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  position: relative;
-  top: 300px;
+  position: absolute;
+  top: 45vh;
 }
 .email-container {
   -webkit-box-align: center;
@@ -23,7 +23,7 @@ a svg {
 }
 .social-container {
   position: absolute;
-  top: 196px;
+  top: 30vh;
   display: flex;
   flex-direction: column;
   -webkit-box-align: center;
