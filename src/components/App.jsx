@@ -3,12 +3,13 @@ import Header from "./Header";
 import About from "./About";
 import Contact from "./Contact";
 import Hello from "./Hello";
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 import "./App.scss";
 import useLocalStorage from "use-local-storage";
 import ParticlesBackground from "./ParticlesBackground";
 import SideEmail from "./SideEmail";
-// import Parallax from "./Parallax";
+import Home from "./Home";
 
 function App() {
   const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
@@ -20,14 +21,16 @@ function App() {
   return (
     <React.Fragment>
       <div data-theme={theme}>
+      <ParallaxProvider>
         {/* <button className="switch" onClick={switchTheme}></button> */}
-        {/* <Parallax /> */}
         <Header />
-        <Hello/>
         <SideEmail />
+        <Home />
+        {/* <Hello/> */}
         <About />
         <Contact />
         {/* <ParticlesBackground/> */}
+        </ParallaxProvider>
       </div>
     </React.Fragment>
   );
