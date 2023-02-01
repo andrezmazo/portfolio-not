@@ -4,11 +4,11 @@ import "./SideEmail.scss";
 function SideEmail() {
   return (
     <React.Fragment>
-      <div className="email-container">
-        <a className="side-email" href="mailto:andrez.mazo@gmail.com">
+      <div className="email-container ">
+        <a className="side-email h-orange " href="mailto:andrez.mazo@gmail.com">
           andrez.mazo@gmail.com
         </a>
-        <ul className="social-container">
+        <ul className="social-container h-orange ">
           <li>
             <a
               href="https://github.com/andrezmazo"

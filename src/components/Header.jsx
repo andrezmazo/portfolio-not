@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import ReactDOM from "react-dom";
 import "./Header.scss";
 
 function Header() {
@@ -8,9 +7,9 @@ function Header() {
   useEffect(()=> {
       const handleScroll = () => {
          let moving = window.pageYOffset
-         
-         setVisible(position > moving);
+         setVisible( moving < 250 || moving < position);
          setPosition(moving)
+        
       };
       window.addEventListener("scroll", handleScroll);
       return(() => {
@@ -18,8 +17,8 @@ function Header() {
       })
   })
 
-const headerHandler = visible ? "site-header" : "hidden";
-// const headerHandler = visible ? "0px" : "-100px";
+
+const headerHandler = position === 0 ? "site-header hide-bar" : ( visible ? "site-header" : "hidden")
 
 
   return (

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef, useEffect} from "react";
 import Header from "./Header";
 import About from "./About";
 import Contact from "./Contact";
@@ -16,6 +16,26 @@ function App() {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
   };
+  const myRef =useRef()
+  useEffect(()=>{
+    console.log("myRef",myRef.current)
+  })
+  // const square = document.querySelector(".square");
+  // square.classList.remove("square-transition");
+
+  // // Create the observer, same as before:
+  // const observer = new IntersectionObserver((entries) => {
+  //   entries.forEach((entry) => {
+  //     if (entry.isIntersecting) {
+  //       square.classList.add("square-transition");
+  //       return;
+  //     }
+
+  //     square.classList.remove("square-transition");
+  //   });
+  // });
+
+  // observer.observe(document.querySelector(".square-wrapper"));
 
   return (
     <React.Fragment>
@@ -27,6 +47,9 @@ function App() {
           <Home />
           <About />
           <Contact />
+          <div ref={myRef} className="square-wrapper">
+            <div className="square square-transition"></div>
+          </div>
           {/* <ParticlesBackground/> */}
         </ParallaxProvider>
       </div>
