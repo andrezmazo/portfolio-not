@@ -40,7 +40,7 @@ const headerHandler = visible ? "site-header" : "hidden";
           <a href="#Contact">Contact</a>
         </li>
         <li>
-          <a href="/CV-Andrés Zapata Mazo.pdf" className="btn">
+          <a href="/CV-Andrés Zapata Mazo.pdf" className="btn-resume">
             Resume
           </a>
         </li>
