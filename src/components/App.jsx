@@ -3,7 +3,7 @@ import Header from "./Header";
 import About from "./About";
 import Contact from "./Contact";
 import Hello from "./Hello";
-import { ParallaxProvider } from 'react-scroll-parallax';
+import { ParallaxProvider } from "react-scroll-parallax";
 
 import "./App.scss";
 import useLocalStorage from "use-local-storage";
@@ -21,15 +21,15 @@ function App() {
   return (
     <React.Fragment>
       <div data-theme={theme}>
-      <ParallaxProvider>
-        {/* <button className="switch" onClick={switchTheme}></button> */}
-        <Header />
-        <SideEmail />
-        <Home />
-        {/* <Hello/> */}
-        <About />
-        <Contact />
-        {/* <ParticlesBackground/> */}
+        <ParallaxProvider>
+          {/* <button className="switch" onClick={switchTheme}></button> */}
+          <Header />
+          <SideEmail />
+          <Home />
+          {/* <Hello/> */}
+          <About />
+          <Contact />
+          {/* <ParticlesBackground/> */}
         </ParallaxProvider>
       </div>
     </React.Fragment>
