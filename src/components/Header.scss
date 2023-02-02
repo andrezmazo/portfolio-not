@@ -28,6 +28,12 @@ header {
     position: absolute;
     left: 2.5rem;
     top: 0.8rem;
+    transition: all 300ms;
+    &:hover {
+      cursor: pointer;
+      scale: 1.2;
+      color:rgba(255, 187, 0, 0.792);
+    }
   }
   ul {
     font-size: 0.75rem;

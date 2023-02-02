@@ -1,14 +1,15 @@
-import React,{useRef, useEffect} from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Header from "./Header";
+import SideEmail from "./SideEmail";
+import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
+import Work from "./Work";
 import { ParallaxProvider } from "react-scroll-parallax";
 
 import "./App.scss";
 import useLocalStorage from "use-local-storage";
 import ParticlesBackground from "./ParticlesBackground";
-import SideEmail from "./SideEmail";
-import Home from "./Home";
 
 function App() {
   const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
@@ -16,10 +17,17 @@ function App() {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
   };
-  const myRef =useRef()
-  useEffect(()=>{
-    console.log("myRef",myRef.current)
-  })
+  const myRef = useRef();
+  const [myElementIsVisible, setMyElementIsVisible] = useState();
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setMyElementIsVisible(entry.isIntersecting);
+      console.log("entry", entry);
+    });
+    observer.observe(myRef.current);
+    // console.log("myRef",myRef.current)´´ '
+  });
   // const square = document.querySelector(".square");
   // square.classList.remove("square-transition");
 
@@ -45,11 +53,9 @@ function App() {
           <Header />
           <SideEmail />
           <Home />
-          <About />
+          <About myRef={myRef} />
           <Contact />
-          <div ref={myRef} className="square-wrapper">
-            <div className="square square-transition"></div>
-          </div>
+          <Work/>
           {/* <ParticlesBackground/> */}
         </ParallaxProvider>
       </div>

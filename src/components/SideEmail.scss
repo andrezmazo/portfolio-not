@@ -9,6 +9,12 @@
   text-orientation: mixed;
   position: absolute;
   top: 45vh;
+  font-size: 1.2rem;
+  font-weight: 700;
+  &:hover {
+    scale: 1.1;
+    color:rgba(255, 187, 0, 0.792);
+  }
 }
 .email-container {
   -webkit-box-align: center;
@@ -19,6 +25,12 @@
 a svg {
   width: 20px;
   height: 20px;
+  transition: all 300ms;
+  &:hover {
+    
+  scale: 1.2;
+  color:rgba(255, 187, 0, 0.792);
+}
 }
 .social-container {
   position: absolute;
