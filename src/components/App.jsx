@@ -4,6 +4,7 @@ import SideEmail from "./SideEmail";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
+import Experience from "./Experience";
 import Work from "./Work";
 import { ParallaxProvider } from "react-scroll-parallax";
 
@@ -54,8 +55,9 @@ function App() {
           <SideEmail />
           <Home />
           <About myRef={myRef} />
+          <Experience />
+          <Work />
           <Contact />
-          <Work/>
           {/* <ParticlesBackground/> */}
         </ParallaxProvider>
       </div>

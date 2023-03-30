@@ -5,7 +5,7 @@ import { Parallax } from "react-scroll-parallax";
 function Home() {
   return (
     <React.Fragment>
-      <div className="parallax-group">
+      <div className="parallax-group" id="Home">
         <Parallax translateY={[-50, 50]} className="parallax-layer sky" />
         <Parallax translateY={[-40, 40]} className="parallax-layer mountains" />
         <Parallax

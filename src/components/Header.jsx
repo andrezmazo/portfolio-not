@@ -23,8 +23,11 @@ const headerHandler = position === 0 ? "site-header hide-bar" : ( visible ? "sit
 
   return (
     <header className={headerHandler}>
-    {/* // <header className= "site-header" style={{top:{headerHandler}}} > */}
-      <h2>AZM</h2>
+      {/* // <header className= "site-header" style={{top:{headerHandler}}} > */}
+      <h2>
+        {" "}
+        <a href="#Home"> AZM</a>
+      </h2>
       <ul>
         <li>
           <a href="#About">About</a>

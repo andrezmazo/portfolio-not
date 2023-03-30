@@ -23,7 +23,7 @@ header {
   z-index: 100;
   // background-color: #f5f5f5;
   // box-shadow: 0 1px 25px rgba(0, 0, 0, 0.1);
-  h2 {
+  h2 a{
     font-size: 1.25rem;
     position: absolute;
     left: 2.5rem;
@@ -47,17 +47,20 @@ header {
       float: left;
       border: none;
       border-radius: 5px;
-      text-align: center;
       outline: none;
       cursor: pointer;
       box-shadow: 20px 20px 60px #d1d1d1, -20px -20px 60px #ffffff;
-      padding: 12px 20px;
       animation: gradient 2s ease infinite;
       transition: 0.5s;
       .btn-resume{
         color: #fff;
       }
     }
+  }
+  ul li a{
+    height: 38px;
+    width: 84px;
+    display: flex;
   }
 }
 .hidden {
@@ -71,7 +74,7 @@ header {
   z-index: 100;
   background-color: #f5f5f5;
   box-shadow: 0 1px 25px rgba(0, 0, 0, 0.1);
-  h2 {
+  h2 a{
     font-size: 1.25rem;
     position: absolute;
     left: 2.5rem;
@@ -86,11 +89,16 @@ header {
     float: left;
     border: none;
     border-radius: 5px;
-    text-align: center;
     outline: none;
     cursor: pointer;
+
     box-shadow: 20px 20px 60px #d1d1d1, -20px -20px 60px #ffffff;
-    padding: 12px 20px;
+    // padding: 12px 20px;
+  }
+  ul li a{
+    height: 38px;
+    width: 78px;
+    display: flex;
   }
 }
 
