@@ -53,9 +53,11 @@ function App() {
           <Header />
           <SideEmail />
           <Home />
-          <About myRef={myRef} />
-          <Contact />
-          <Work/>
+          <div className="background-hide">
+            <About myRef={myRef} />
+            <Contact />
+            <Work />
+          </div>
           {/* <ParticlesBackground/> */}
         </ParallaxProvider>
       </div>

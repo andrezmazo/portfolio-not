@@ -1,8 +1,10 @@
 .contact-container {
   height: 60vh;
   width: 100%;
+  z-index: 20;
+  position: relative;
   display: flex;
-  background: linear-gradient(180deg, rgba(212,212,212,1) 48%, rgba(255,240,183,0) 100%);
+  // background: linear-gradient(180deg, rgba(212,212,212,1) 48%, rgba(255,240,183,0) 100%);
 }
 .form-container {
   flex-grow: 1;

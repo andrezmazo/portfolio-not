@@ -54,6 +54,11 @@ html {
   top: 50px;
   left: 60px;
 }
+.background-hide{
+  background: #e0e0e0;
+  z-index: 20;
+  position: relative;
+}
 html,
 body {
   width: 100%;

@@ -2,7 +2,7 @@
   position: relative;
   height: 60vh;
   width: 100%;
-  background: linear-gradient(180deg, rgba(212,212,212,1) 48%, rgba(255,240,183,0) 100%);
+  // background: linear-gradient(180deg, rgba(212,212,212,1) 48%, rgba(255,240,183,0) 100%);
   z-index: 5;
   display: flex;
 }
@@ -40,7 +40,4 @@
   font-size: 1rem ;
   margin-bottom: 1rem;
   margin-top: 1rem;
-}
-.about-container .box-container{
-  margin-top: 20px;
 }
