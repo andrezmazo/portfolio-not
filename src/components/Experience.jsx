@@ -10,16 +10,34 @@ function Experience() {
           <div className="text-container center">
             <h3 className="title-section">Experience</h3>
             <h2>Some technologies i've worked with </h2>
-            <p></p>
-            <ul>
-              <li>JavaScript, React Js.</li>
-              <li>
-                Node Js, JAVA, MySql, Mongodb, Express Js, GitHub, Databases.
-              </li>
-              <li>HTML, semantic Web.</li>
-              <li>CSS, SASS, Bootstrap.</li>
-              <li>FrontEnd - Backend interaction. HTTP request, Postman.</li>
-            </ul>
+            <div className="list">
+              <div>
+                <h3>Front End technologies:</h3>
+                <ul>
+                  <li>Html.</li>
+                  <li>Css.</li>
+                  <li>JavaScript.</li>
+                  <li>React js.</li>
+                  <li>Angular.</li>
+                  <li>Sass.</li>
+                  <li>Bootstrap.</li>
+                </ul>
+              </div>
+              <hr />
+              <div>
+                <h3> Back End technologies:</h3>
+                <ul>
+                  <li>Node.JS.</li>
+                  <li>MySQL</li>
+                  <li>Java.</li>
+                  <li>PHP.</li>
+                  <li>MongoDb.</li>
+                  <li>MySQL.</li>
+                  <li>Git.</li>
+                  <li>Express js.</li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div className="pic-container">
             <div className="over-pic"></div>

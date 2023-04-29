@@ -23,7 +23,7 @@ function About(props) {
               acquire new knowledge to develop myself in new challenges
             </p>
             <p>What would life be if we had no courage to attempt anything?</p>
-            <p>- Vincent Van Gogh</p>
+            <h5>- Vincent Van Gogh</h5>
           </div>
         </div>
       </section>

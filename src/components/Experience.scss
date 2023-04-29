@@ -30,18 +30,25 @@
   flex-grow: 1;
   max-width: 50%;
 }
+.experience-container div .text-container .list {
+  display: flex;
+  align-items: flex-start;
+  div {
+    margin:10px 30px;
+    h3 {
+    margin-top: 15px;
+    text-align: left;
+  }
+}  
+}
 .experience-container div .text-container ul{
   margin-top: 20px;
   font-weight: 400;
   font-size:1.1rem;
-  // margin: 2rem 1rem;
+  margin: 1rem 1rem;
 }
 
-.experience-container div .text-container p:nth-of-type(2) {
-  font-size: 1rem ;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
+
 .experience-container .box-container{
   margin-top: 20px;
 }
